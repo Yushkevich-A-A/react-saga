@@ -20,7 +20,6 @@ let isEven = true;
 
 const router = new Router();
 router.get('/api/search', async (ctx, next) => {
-    console.log('запрос пришел')
     if (Math.random() > 0.75) {
         ctx.response.status = 500;
         return;
